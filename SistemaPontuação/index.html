@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Luta</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+    
+    <p id="cronometro">00:00:00</p>
+
+<table width="100%" id="table">
+  <tr>
+      <td id="td1">
+
+          <h1 id="aka">AKA</h1>
+          <p><span id="pontuacaoAka">0</span></p>
+
+          <button class="btn" onclick="adicionarPonto('aka')">+</button>
+          <button class="btn" onclick="zerarPontos('aka')">0</button>
+    
+          <p class="C1-Aka">Jogai</p>
+          <p id="faltasXAka" class="faltas-x"></p>
+          <button class="btn" onclick="adicionarFalta('aka')">+</button>
+
+          <p class="C2-Aka">Falta</p>
+          <p id="faltasX2Aka" class="faltas-x"></p>
+          <button class="btn" onclick="adicionarFalta('aka', 2)">+</button>
+          
+      </td>
+
+      <td id="td2">
+
+          <h1 id="shiro">SHIRO</h1> 
+          <p><span id="pontuacaoShiro">0</span></p>
+
+          <button class="btn" onclick="adicionarPonto('shiro')">+</button>
+          <button class="btn" onclick="zerarPontos('shiro')">0</button>
+
+          <p class="C1-shiro">Jogai</p>
+          <p id="faltasXShiro" class="faltas-x"></p>
+          <button class="btn" onclick="adicionarFalta('shiro')">+</button>
+
+          <p class="C2-shiro">Falta</p>
+          <p id="faltasX2Shiro" class="faltas-x"></p>
+          <button class="btn" onclick="adicionarFalta('shiro', 2)">+</button>
+          
+      </td>
+
+  </tr>
+
+</table>
+
+<button id="startButton" class="btn" onclick="startStopTimer()">Iniciar/Parar Cronômetro</button>
+<button id="resetButton" class="btn" onclick="resetTimer()">Zerar Cronômetro</button>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
